@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+        <div class="header">
+            <h1>Task Master</h1>
+            <p>Keep track of your daily tasks with ease</p>
+        </div>
+
+        <div class="form-container">
+            <form class="task-form" id="task-form">
+                <input type="text" class="task-input" id="task-input" placeholder="Add a new task..." required>
+                <button type="submit" class="add-btn">Add Task</button>
+            </form>
+        </div>
+
+        <div class="tasks-container">
+            <ul class="task-list" id="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+            <div class="empty-state" id="empty-state">
+                <div>📝</div>
+                <p>No tasks yet. Add a task to get started!</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>You have <span class="task-count" id="task-count">0</span> tasks remaining</div>
+            <button class="clear-all" id="clear-all">Clear All Tasks</button>
+        </div>
+    </div>
+  <script src="./script.js"></script>
+  </body>
+</html>
